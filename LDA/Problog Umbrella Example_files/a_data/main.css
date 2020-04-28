@@ -1,0 +1,98 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    cursor: inherit;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+#main {
+    background: white;
+    -webkit-flex: 0 0 auto;
+    flex: 1 1 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+#vmiddle {
+    position: relative;
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+}
+
+#control table {
+    margin-bottom: 0;
+}
+
+div.minimap {
+    background: white;
+    border: 2px solid #787878;
+    height: 15%;
+    width: 15%;
+    left: 84.5%;
+    top: 82.5%;
+    position: absolute;
+    z-index: 99999999;
+}
+
+.graph {
+    background: #eeeeee;
+}
+
+.line {
+    fill: none;
+    stroke: black;
+    stroke-width: 1.5px;
+}
+
+#statusbar {
+    padding: 0 0.5em 0.5em 0.5em;
+    font-size: 85%;
+    overflow: hidden;
+}
+
+#build-progress {
+    float: right;
+    width: 33%;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+    position: relative;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.pb-text {
+    position: absolute;
+    width: 100%;
+}
+
+.pb-fill {
+    background-color: #bdd2e6;
+    width: 0%;
+
+}
+
+@keyframes pb-fill-anim {
+    0% { background-position: -100px 0px };
+    100% { background-position: 0px 0px };
+}
